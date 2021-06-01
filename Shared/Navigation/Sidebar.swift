@@ -44,6 +44,7 @@ struct Sidebar: View {
             Label("Certificates", systemImage: "mail.stack")
             Label("Search", systemImage: "magnifyingglass")
         }
+        .listStyle(SidebarListStyle())
     }
 }
 

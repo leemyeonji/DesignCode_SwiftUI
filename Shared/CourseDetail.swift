@@ -12,13 +12,14 @@ struct CourseDetail: View {
     var namespace: Namespace.ID
     
     #if os(iOS)
-    var cornerRadius: CGFloat = 22.0
-    #else
     var cornerRadius: CGFloat = 10.0
+    #else
+    var cornerRadius: CGFloat = 0
     #endif
-    
+    @State var showModal = false
     
     var body: some View {
+        
         #if os(iOS)
         content
         .edgesIgnoringSafeArea(.all)
@@ -36,7 +37,12 @@ struct CourseDetail: View {
                 VStack {
                     ForEach(courseSections) { item in
                         CourseRow(item: item)
-                            .padding(4)
+                            .sheet(isPresented: $showModal) {
+                                CourseSectionDetail()
+                            }
+                            .onTapGesture {
+                                showModal = true
+                            }
                         Divider()
                     }
                 }
