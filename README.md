@@ -1,7 +1,9 @@
 # DesignCode_SwiftUI for iOS 14
-Design Code의 iOS 14 SwiftUI Course 입니다. 
+
+##Design Code의 iOS 14 SwiftUI Course 입니다. 
 iOS 14 환경의 새로운 기술을 이용하여 멀티 플랫폼에 대응하는 애플리케이션을 구현했습니다.
 iPhone 과 iPad, MacOS에서 작동합니다.
+---
 
 ![Desktop - 9](https://user-images.githubusercontent.com/61834038/121177467-63ce9800-c898-11eb-8f18-b50fb3debb56.png)
 
