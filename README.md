@@ -14,3 +14,17 @@
 
 <img width="1109" alt="스크린샷 2021-06-08 오후 4 00 42" src="https://user-images.githubusercontent.com/61834038/121177558-82cd2a00-c898-11eb-9efb-2b4b1ee16f57.png">
 
+# What I used in this project
+
+**SF Symbols**
+**Sidebar navigation for iOS 14 and macOS**
+**Cross-platform UI**
+**Matched Geometry Effect**
+**Asymmetric Transition and Delay**
+**Lazy Grid**
+**Visual Effent Blur**
+**Size Class**
+**Navigagion Link and Modal**
+**Animation**
+**Library Content**
+**Widget**
