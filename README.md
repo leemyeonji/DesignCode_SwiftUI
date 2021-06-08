@@ -17,9 +17,8 @@
 # What I used in this project
 
 **SF Symbols**
-  -  
+  - SF Symbols2 사용
 **Sidebar navigation for iOS 14 and macOS**
-  - 
 **Cross-platform UI**
   - SwiftUI에서의 유려한 툴바. 각 환경을 위한 사이즈와 트랜지션을 conditionals을 통해 적용.
 **Matched Geometry Effect**
