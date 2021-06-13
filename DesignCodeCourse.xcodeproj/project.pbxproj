@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6327004266E7DC500D3519B /* DesignCodeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A3C7A62665E65E00D3A9D5 /* DesignCodeWidget.swift */; };
 		C644490F266355C400960DC0 /* DesignCodeCourseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64448FC266355AC00960DC0 /* DesignCodeCourseApp.swift */; };
 		C6444911266355C400960DC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64448FD266355AC00960DC0 /* ContentView.swift */; };
 		C6444912266355C400960DC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64448FD266355AC00960DC0 /* ContentView.swift */; };
@@ -53,7 +54,10 @@
 		C6A3C7A42665E65E00D3A9D5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A3C7762665C42800D3A9D5 /* SwiftUI.framework */; };
 		C6A3C7A92665E65F00D3A9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6A3C7A82665E65F00D3A9D5 /* Assets.xcassets */; };
 		C6A3C7AD2665E65F00D3A9D5 /* DesignCodeWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C6A3C7A22665E65E00D3A9D5 /* DesignCodeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C6A3C7B52665E6FD00D3A9D5 /* DesignCodeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A3C7A62665E65E00D3A9D5 /* DesignCodeWidget.swift */; };
+		C6BBC9EB266F36D000EAD7A3 /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C644491D2663721B00960DC0 /* CourseRow.swift */; };
+		C6BBC9EC266F36FF00EAD7A3 /* CourseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67659AE26648E2E00E4E714 /* CourseSection.swift */; };
+		C6BBC9ED266F370C00EAD7A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64448FE266355C300960DC0 /* Assets.xcassets */; };
+		C6BBC9EE266F4CCA00EAD7A3 /* DesignCodeCourseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64448FC266355AC00960DC0 /* DesignCodeCourseApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -381,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6BBC9ED266F370C00EAD7A3 /* Assets.xcassets in Resources */,
 				C6A3C7A92665E65F00D3A9D5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,7 +411,6 @@
 				C6444911266355C400960DC0 /* ContentView.swift in Sources */,
 				C67659BC26648E2E00E4E714 /* Download.swift in Sources */,
 				C644491E2663721B00960DC0 /* CourseRow.swift in Sources */,
-				C6A3C7B52665E6FD00D3A9D5 /* DesignCodeWidget.swift in Sources */,
 				C67659B826648E2E00E4E714 /* GradientModel.swift in Sources */,
 				C644490F266355C400960DC0 /* DesignCodeCourseApp.swift in Sources */,
 				C67659C026648E2E00E4E714 /* TutorialSection.swift in Sources */,
@@ -424,6 +428,7 @@
 				C64449302663C2C200960DC0 /* Course.swift in Sources */,
 				C67659B526648E2E00E4E714 /* LivestreamSection.swift in Sources */,
 				C64449252663772700960DC0 /* Sidebar.swift in Sources */,
+				C6BBC9EE266F4CCA00EAD7A3 /* DesignCodeCourseApp.swift in Sources */,
 				C64449282663810600960DC0 /* CourseItem.swift in Sources */,
 				C67659B726648E2E00E4E714 /* CourseSection.swift in Sources */,
 				C67659CB2664927500E4E714 /* VisualEffectBlur 2.swift in Sources */,
@@ -447,6 +452,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6327004266E7DC500D3519B /* DesignCodeWidget.swift in Sources */,
+				C6BBC9EC266F36FF00EAD7A3 /* CourseSection.swift in Sources */,
+				C6BBC9EB266F36D000EAD7A3 /* CourseRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +583,7 @@
 		C6444918266355C400960DC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -597,6 +606,7 @@
 		C6444919266355C400960DC0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;

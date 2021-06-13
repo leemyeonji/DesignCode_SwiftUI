@@ -36,7 +36,7 @@ struct CourseSectionDetail: View {
                 .padding()
             }
             CloseButton()
-                .padding()
+                .padding(20)
                 .onTapGesture {
                     presentationMode.wrappedValue.dismiss()
                 }

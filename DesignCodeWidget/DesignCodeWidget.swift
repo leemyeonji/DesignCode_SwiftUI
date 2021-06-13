@@ -40,11 +40,51 @@ struct SimpleEntry: TimelineEntry {
 
 struct DesignCodeWidgetEntryView : View {
     var entry: Provider.Entry
+    @Environment(\.widgetFamily) var family
 
     var body: some View {
-        Text(entry.date, style: .time)
+        if family == .systemSmall {
+            DesignCodeWidgetSmall()
+        } else {
+            DesignCodeWidgetMedium()
+        }
+        
     }
 }
+
+struct DesignCodeWidgetSmall: View {
+    var body: some View {
+        VStack(alignment: .leading){
+            Text("Newest")
+                .font(Font.footnote.smallCaps())
+                .foregroundColor(.secondary)
+            Text("Matched Geometry Effect")
+                .font(.subheadline)
+                .fontWeight(.semibold)
+            Text("Learn how to quickly transition different Views")
+                .font(.footnote)
+                .foregroundColor(.secondary)
+        }
+        .padding(12)
+    }
+}
+
+struct DesignCodeWidgetMedium: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8){
+            Text("Newest")
+                .font(Font.footnote.smallCaps())
+            ForEach(courseSections.indices) { index in
+                if index < 2 {
+                    CourseRow(item: courseSections[index])
+                }
+            }
+        }
+        .padding(12)
+    }
+}
+
+
 
 @main
 struct DesignCodeWidget: Widget {
@@ -56,12 +96,13 @@ struct DesignCodeWidget: Widget {
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
 
 struct DesignCodeWidget_Previews: PreviewProvider {
     static var previews: some View {
         DesignCodeWidgetEntryView(entry: SimpleEntry(date: Date()))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }
